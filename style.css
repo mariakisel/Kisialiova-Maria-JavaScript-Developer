@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;  
+}
+
+body {     
+  margin: 0 auto;
+  background-color: #f1f1f1;  
+  max-width: 1280px;
+  min-width: 320px;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;  
+  font: 115%/1.5 Minion Pro;    
+}
+
+.box-shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+ p, h6, h4 {  
+  margin: 0;
+}
+
+.navbar ul { 
+  display: flex;
+  list-style-type: none; 
+  background-color: #333;  
+  padding: 0;
+  overflow: hidden;    
+}
+
+.navbar li a, .dropbtn {
+  display: block;
+  color: #fff; 
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover, .dropdown-content a:hover {
+  background-color: #57d2f1;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 30vw;  
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.flex-row {  
+  display: flex;
+  flex-wrap: wrap;  
+}
+
+.side {
+  flex: 15%;
+}
+
+.main {
+  flex: 60%;  
+  margin-left: 10px;
+}
+
+.box {
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+div.photo-box {  
+  margin: 0 auto;
+}
+
+img {  
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.date {
+  flex: 20%;   
+}
+
+.information {
+  flex: 70%;  
+}
+
+.box-alignment-baseline {
+  align-items: baseline;
+  margin: 30px 0;  
+}
+
+.fa-fw {
+  color: #57d2f1;
+  margin-right: 5px;
+}
+
+.progress-bar {
+  background-color: #f1f1f1;
+  height: 10px;  
+  margin: 10px 0;
+  border-radius: 15px;
+  box-shadow: 0 1px 5px #aaa9a9 inset, 0 1px 0 #d9d8d8;
+}
+
+.progress-bar div {  
+  height: 10px;  
+  border-radius: 15px; 
+  box-shadow: 0 1px 0 #d1edf4 inset;   
+}  
+
+.blue div {
+ background-color:#57d2f1;
+}
+
+@media screen and (max-width: 1450px) {
+  body {
+    width: 90%;
+  }
+
+  .side {
+    flex: 35%;
+  }
+  
+  .main {
+    flex: 55%;        
+  }
+}
+
+@media screen and (max-width: 800px) {  
+  body {
+    font: 105%/1.5 Minion Pro;    
+  }
+
+ .flex-row {   
+    flex-direction: column;   
+  } 
+
+  .side, .main {      
+      margin-left: 0; 
+  }  
+}
